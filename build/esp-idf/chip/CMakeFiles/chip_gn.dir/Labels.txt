@@ -1,0 +1,13 @@
+# Target labels
+ chip_gn
+# Source files and their labels
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/build/esp-idf/chip/CMakeFiles/chip_gn
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/build/esp-idf/chip/CMakeFiles/chip_gn.rule
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/build/esp-idf/chip/CMakeFiles/chip_gn-complete.rule
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/build/esp-idf/chip/chip_gn-prefix/src/chip_gn-stamp/chip_gn-build.rule
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/build/esp-idf/chip/chip_gn-prefix/src/chip_gn-stamp/chip_gn-configure.rule
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/build/esp-idf/chip/chip_gn-prefix/src/chip_gn-stamp/chip_gn-download.rule
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/build/esp-idf/chip/chip_gn-prefix/src/chip_gn-stamp/chip_gn-install.rule
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/build/esp-idf/chip/chip_gn-prefix/src/chip_gn-stamp/chip_gn-mkdir.rule
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/build/esp-idf/chip/chip_gn-prefix/src/chip_gn-stamp/chip_gn-patch.rule
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/build/esp-idf/chip/chip_gn-prefix/src/chip_gn-stamp/chip_gn-update.rule

@@ -1,0 +1,267 @@
+[1/24] Generating args.gn
+[2/24] Performing build step for 'bootloader'
+[1/1] cd /home/knipin/esp/esp-matter/examples/smart_floor_v3/build/bootloader/esp-idf/esptool_py && /home/knipin/.espressif/python_env/idf5.4_py3.10_env/bin/python /home/knipin/esp/esp-idf/components/partition_table/check_sizes.py --offset 0xc000 bootloader 0x0 /home/knipin/esp/esp-matter/examples/smart_floor_v3/build/bootloader/bootloader.bin
+Bootloader binary size 0x55f0 bytes. 0x6a10 bytes (55%) free.
+[3/22] Performing build step for 'chip_gn'
+[0/1] Regenerating ninja files
+ninja: no work to do.
+[4/20] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/app_main.cpp.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/app_main.cpp.obj 
+/home/knipin/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20241119/riscv32-esp-elf/bin/riscv32-esp-elf-g++ -DESP_MDNS_VERSION_NUMBER=\"1.8.2\" -DESP_PLATFORM -DIDF_VER=\"v5.4.1\" -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/home/knipin/esp/esp-matter/examples/smart_floor_v3/build/config -I/home/knipin/esp/esp-matter/examples/smart_floor_v3/main -I/home/knipin/esp/esp-matter/components/esp_matter -I/home/knipin/esp/esp-matter/device_hal/device/include -I/home/knipin/esp/esp-matter/examples/common/utils -I/home/knipin/esp/esp-matter/connectedhomeip/connectedhomeip/src -I/home/knipin/esp/esp-matter/connectedhomeip/connectedhomeip/zzz_generated/app-common/app-common/zap-generated -I/home/knipin/esp/esp-idf/components/newlib/platform_include -I/home/knipin/esp/esp-idf/components/freertos/config/include -I/home/knipin/esp/esp-idf/components/freertos/config/include/freertos -I/home/knipin/esp/esp-idf/components/freertos/config/riscv/include -I/home/knipin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/knipin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include -I/home/knipin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos -I/home/knipin/esp/esp-idf/components/freertos/esp_additions/include -I/home/knipin/esp/esp-idf/components/esp_hw_support/include -I/home/knipin/esp/esp-idf/components/esp_hw_support/include/soc -I/home/knipin/esp/esp-idf/components/esp_hw_support/include/soc/esp32c6 -I/home/knipin/esp/esp-idf/components/esp_hw_support/dma/include -I/home/knipin/esp/esp-idf/components/esp_hw_support/ldo/include -I/home/knipin/esp/esp-idf/components/esp_hw_support/debug_probe/include -I/home/knipin/esp/esp-idf/components/esp_hw_support/port/esp32c6/. -I/home/knipin/esp/esp-idf/components/esp_hw_support/port/esp32c6/include -I/home/knipin/esp/esp-idf/components/esp_hw_support/port/esp32c6/private_include -I/home/knipin/esp/esp-idf/components/heap/include -I/home/knipin/esp/esp-idf/components/heap/tlsf -I/home/knipin/esp/esp-idf/components/log/include -I/home/knipin/esp/esp-idf/components/soc/include -I/home/knipin/esp/esp-idf/components/soc/esp32c6 -I/home/knipin/esp/esp-idf/components/soc/esp32c6/include -I/home/knipin/esp/esp-idf/components/soc/esp32c6/register -I/home/knipin/esp/esp-idf/components/hal/platform_port/include -I/home/knipin/esp/esp-idf/components/hal/esp32c6/include -I/home/knipin/esp/esp-idf/components/hal/include -I/home/knipin/esp/esp-idf/components/esp_rom/include -I/home/knipin/esp/esp-idf/components/esp_rom/esp32c6/include -I/home/knipin/esp/esp-idf/components/esp_rom/esp32c6/include/esp32c6 -I/home/knipin/esp/esp-idf/components/esp_rom/esp32c6 -I/home/knipin/esp/esp-idf/components/esp_common/include -I/home/knipin/esp/esp-idf/components/esp_system/include -I/home/knipin/esp/esp-idf/components/esp_system/port/soc -I/home/knipin/esp/esp-idf/components/esp_system/port/include/riscv -I/home/knipin/esp/esp-idf/components/esp_system/port/include/private -I/home/knipin/esp/esp-idf/components/riscv/include -I/home/knipin/esp/esp-idf/components/lwip/include -I/home/knipin/esp/esp-idf/components/lwip/include/apps -I/home/knipin/esp/esp-idf/components/lwip/include/apps/sntp -I/home/knipin/esp/esp-idf/components/lwip/lwip/src/include -I/home/knipin/esp/esp-idf/components/lwip/port/include -I/home/knipin/esp/esp-idf/components/lwip/port/freertos/include -I/home/knipin/esp/esp-idf/components/lwip/port/esp32xx/include -I/home/knipin/esp/esp-idf/components/lwip/port/esp32xx/include/arch -I/home/knipin/esp/esp-idf/components/lwip/port/esp32xx/include/sys -I/home/knipin/esp/esp-idf/components/nvs_flash/include -I/home/knipin/esp/esp-idf/components/esp_partition/include -I/home/knipin/esp/esp-idf/components/driver/deprecated -I/home/knipin/esp/esp-idf/components/driver/i2c/include -I/home/knipin/esp/esp-idf/components/driver/touch_sensor/include -I/home/knipin/esp/esp-idf/components/driver/twai/include -I/home/knipin/esp/esp-idf/components/esp_pm/include -I/home/knipin/esp/esp-idf/components/esp_ringbuf/include -I/home/knipin/esp/esp-idf/components/esp_driver_gpio/include -I/home/knipin/esp/esp-idf/components/esp_driver_pcnt/include -I/home/knipin/esp/esp-idf/components/esp_driver_gptimer/include -I/home/knipin/esp/esp-idf/components/esp_driver_spi/include -I/home/knipin/esp/esp-idf/components/esp_driver_mcpwm/include -I/home/knipin/esp/esp-idf/components/esp_driver_ana_cmpr/include -I/home/knipin/esp/esp-idf/components/esp_driver_i2s/include -I/home/knipin/esp/esp-idf/components/esp_driver_sdmmc/include -I/home/knipin/esp/esp-idf/components/sdmmc/include -I/home/knipin/esp/esp-idf/components/esp_driver_sdspi/include -I/home/knipin/esp/esp-idf/components/esp_driver_sdio/include -I/home/knipin/esp/esp-idf/components/esp_driver_dac/include -I/home/knipin/esp/esp-idf/components/esp_driver_rmt/include -I/home/knipin/esp/esp-idf/components/esp_driver_tsens/include -I/home/knipin/esp/esp-idf/components/esp_driver_sdm/include -I/home/knipin/esp/esp-idf/components/esp_driver_i2c/include -I/home/knipin/esp/esp-idf/components/esp_driver_uart/include -I/home/knipin/esp/esp-idf/components/vfs/include -I/home/knipin/esp/esp-idf/components/esp_driver_ledc/include -I/home/knipin/esp/esp-idf/components/esp_driver_parlio/include -I/home/knipin/esp/esp-idf/components/esp_driver_usb_serial_jtag/include -I/home/knipin/esp/esp-matter/components/esp_matter/utils -I/home/knipin/esp/esp-matter/connectedhomeip/connectedhomeip/zzz_generated/app-common -I/home/knipin/esp/esp-matter/connectedhomeip/connectedhomeip/third_party/nlfaultinjection/include -I/home/knipin/esp/esp-matter/components/esp_matter/zap_common -I/home/knipin/esp/esp-matter/connectedhomeip/connectedhomeip/src/platform/ESP32 -I/home/knipin/esp/esp-matter/connectedhomeip/connectedhomeip/src/platform/OpenThread -I/home/knipin/esp/esp-matter/connectedhomeip/connectedhomeip/src/include -I/home/knipin/esp/esp-matter/connectedhomeip/connectedhomeip/src/lib -I/home/knipin/esp/esp-matter/connectedhomeip/connectedhomeip/examples/platform/esp32 -I/home/knipin/esp/esp-matter/connectedhomeip/connectedhomeip/third_party/nlassert/repo/include -I/home/knipin/esp/esp-matter/connectedhomeip/connectedhomeip/third_party/nlio/repo/include -I/home/knipin/esp/esp-matter/examples/smart_floor_v3/build/esp-idf/chip/src/include -I/home/knipin/esp/esp-matter/examples/smart_floor_v3/build/esp-idf/chip/include -I/home/knipin/esp/esp-matter/examples/smart_floor_v3/build/esp-idf/chip/gen/include -I/home/knipin/esp/esp-matter/connectedhomeip/connectedhomeip/config/esp32 -I/home/knipin/esp/esp-matter/connectedhomeip/connectedhomeip/config/esp32/../.. -I/home/knipin/esp/esp-matter/examples/smart_floor_v3/managed_components/espressif__esp_delta_ota/include -I/home/knipin/esp/esp-matter/examples/smart_floor_v3/managed_components/espressif__esp_encrypted_img/include -I/home/knipin/esp/esp-matter/examples/smart_floor_v3/managed_components/espressif__esp_insights/include -I/home/knipin/esp/esp-matter/examples/smart_floor_v3/managed_components/espressif__esp_diagnostics/include -I/home/knipin/esp/esp-idf/components/console -I/home/knipin/esp/esp-idf/components/esp_vfs_console/include -I/home/knipin/esp/esp-idf/components/bt/include/esp32c6/include -I/home/knipin/esp/esp-idf/components/bt/common/osi/include -I/home/knipin/esp/esp-idf/components/bt/common/api/include/api -I/home/knipin/esp/esp-idf/components/bt/common/btc/profile/esp/blufi/include -I/home/knipin/esp/esp-idf/components/bt/common/btc/profile/esp/include -I/home/knipin/esp/esp-idf/components/bt/common/hci_log/include -I/home/knipin/esp/esp-idf/components/bt/common/ble_log/include -I/home/knipin/esp/esp-idf/components/bt/porting/include -I/home/knipin/esp/esp-idf/components/bt/porting/npl/freertos/include -I/home/knipin/esp/esp-idf/components/bt/porting/transport/include -I/home/knipin/esp/esp-idf/components/bt/host/nimble/nimble/nimble/host/include -I/home/knipin/esp/esp-idf/components/bt/host/nimble/nimble/nimble/include -I/home/knipin/esp/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/ans/include -I/home/knipin/esp/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/bas/include -I/home/knipin/esp/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/dis/include -I/home/knipin/esp/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/gap/include -I/home/knipin/esp/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/gatt/include -I/home/knipin/esp/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/hr/include -I/home/knipin/esp/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/htp/include -I/home/knipin/esp/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/ias/include -I/home/knipin/esp/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/ipss/include -I/home/knipin/esp/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/lls/include -I/home/knipin/esp/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/prox/include -I/home/knipin/esp/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/cts/include -I/home/knipin/esp/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/tps/include -I/home/knipin/esp/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/hid/include -I/home/knipin/esp/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/sps/include -I/home/knipin/esp/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/cte/include -I/home/knipin/esp/esp-idf/components/bt/host/nimble/nimble/nimble/host/util/include -I/home/knipin/esp/esp-idf/components/bt/host/nimble/nimble/nimble/host/store/ram/include -I/home/knipin/esp/esp-idf/components/bt/host/nimble/nimble/nimble/host/store/config/include -I/home/knipin/esp/esp-idf/components/bt/host/nimble/nimble/porting/nimble/include -I/home/knipin/esp/esp-idf/components/bt/host/nimble/port/include -I/home/knipin/esp/esp-idf/components/bt/host/nimble/nimble/nimble/transport/include -I/home/knipin/esp/esp-idf/components/esp_timer/include -I/home/knipin/esp/esp-idf/components/esp_wifi/include -I/home/knipin/esp/esp-idf/components/esp_wifi/include/local -I/home/knipin/esp/esp-idf/components/esp_wifi/wifi_apps/include -I/home/knipin/esp/esp-idf/components/esp_wifi/wifi_apps/nan_app/include -I/home/knipin/esp/esp-idf/components/esp_event/include -I/home/knipin/esp/esp-idf/components/esp_phy/include -I/home/knipin/esp/esp-idf/components/esp_phy/esp32c6/include -I/home/knipin/esp/esp-idf/components/esp_netif/include -I/home/knipin/esp/esp-matter/examples/smart_floor_v3/managed_components/espressif__mdns/include -I/home/knipin/esp/esp-matter/components/esp_matter_console -I/home/knipin/esp/esp-idf/components/app_update/include -I/home/knipin/esp/esp-idf/components/bootloader_support/include -I/home/knipin/esp/esp-idf/components/bootloader_support/bootloader_flash/include -I/home/knipin/esp/esp-idf/components/esp_app_format/include -I/home/knipin/esp/esp-idf/components/esp_bootloader_format/include -I/home/knipin/esp/esp-matter/examples/smart_floor_v3/managed_components/espressif__esp_secure_cert_mgr/include -I/home/knipin/esp/esp-idf/components/spi_flash/include -I/home/knipin/esp/esp-idf/components/mbedtls/port/include -I/home/knipin/esp/esp-idf/components/mbedtls/mbedtls/include -I/home/knipin/esp/esp-idf/components/mbedtls/mbedtls/library -I/home/knipin/esp/esp-idf/components/mbedtls/esp_crt_bundle/include -I/home/knipin/esp/esp-idf/components/mbedtls/mbedtls/3rdparty/everest/include -I/home/knipin/esp/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m -I/home/knipin/esp/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m/p256-m -I/home/knipin/esp/esp-idf/components/efuse/include -I/home/knipin/esp/esp-idf/components/efuse/esp32c6/include -I/home/knipin/esp/esp-idf/components/json/cJSON -march=rv32imac_zicsr_zifencei  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -nostartfiles -Og -fno-shrink-wrap -fmacro-prefix-map=/home/knipin/esp/esp-matter/examples/smart_floor_v3=. -fmacro-prefix-map=/home/knipin/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -Wno-error=uninitialized -Wno-error=maybe-uninitialized -Wno-missing-field-initializers -Wno-error=array-bounds -Wno-write-strings -Wno-format-nonliteral -Wno-format-security -std=gnu++2b -fno-exceptions -fno-rtti -fuse-cxa-atexit -std=gnu++17 -Os -DCHIP_HAVE_CONFIG_H -Wno-overloaded-virtual "-DCHIP_ADDRESS_RESOLVE_IMPL_INCLUDE_HEADER=<lib/address_resolve/AddressResolve_DefaultImpl.h>" -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/app_main.cpp.obj -MF esp-idf/main/CMakeFiles/__idf_main.dir/app_main.cpp.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/app_main.cpp.obj -c /home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:2:6: error: variable or field 'pid_reset' declared void
+    2 | void pid_reset(pid_controller_t* controller);
+      |      ^~~~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:2:16: error: 'pid_controller_t' was not declared in this scope
+    2 | void pid_reset(pid_controller_t* controller);
+      |                ^~~~~~~~~~~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:2:34: error: 'controller' was not declared in this scope
+    2 | void pid_reset(pid_controller_t* controller);
+      |                                  ^~~~~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:5:8: error: 'pid_controller_t' does not name a type
+    5 | static pid_controller_t g_pid;
+      |        ^~~~~~~~~~~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:10:1: error: 'uint16_t' does not name a type
+   10 | uint16_t temp_endpoint_id = 0;
+      | ^~~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:1:1: note: 'uint16_t' is defined in header '<cstdint>'; this is probably fixable by adding '#include <cstdint>'
+  +++ |+#include <cstdint>
+    1 | // Явное объявление функции pid_reset для уверенности в видимости
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp: In function 'void temp_control_task(void*)':
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:15:5: error: 'attribute_t' was not declared in this scope
+   15 |     attribute_t *target_temp_attribute = attribute::get(temp_endpoint_id, Thermostat::Id, chip::app::Clusters::Thermostat::Attributes::TargetHeatingSetpoint::Id);
+      |     ^~~~~~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:15:18: error: 'target_temp_attribute' was not declared in this scope
+   15 |     attribute_t *target_temp_attribute = attribute::get(temp_endpoint_id, Thermostat::Id, chip::app::Clusters::Thermostat::Attributes::TargetHeatingSetpoint::Id);
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:15:42: error: 'attribute' has not been declared
+   15 |     attribute_t *target_temp_attribute = attribute::get(temp_endpoint_id, Thermostat::Id, chip::app::Clusters::Thermostat::Attributes::TargetHeatingSetpoint::Id);
+      |                                          ^~~~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:15:57: error: 'temp_endpoint_id' was not declared in this scope
+   15 |     attribute_t *target_temp_attribute = attribute::get(temp_endpoint_id, Thermostat::Id, chip::app::Clusters::Thermostat::Attributes::TargetHeatingSetpoint::Id);
+      |                                                         ^~~~~~~~~~~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:15:75: error: 'Thermostat' has not been declared
+   15 |     attribute_t *target_temp_attribute = attribute::get(temp_endpoint_id, Thermostat::Id, chip::app::Clusters::Thermostat::Attributes::TargetHeatingSetpoint::Id);
+      |                                                                           ^~~~~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:15:91: error: 'chip' has not been declared
+   15 |     attribute_t *target_temp_attribute = attribute::get(temp_endpoint_id, Thermostat::Id, chip::app::Clusters::Thermostat::Attributes::TargetHeatingSetpoint::Id);
+      |                                                                                           ^~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:16:18: error: 'hvac_mode_attribute' was not declared in this scope
+   16 |     attribute_t *hvac_mode_attribute = attribute::get(temp_endpoint_id, Thermostat::Id, chip::app::Clusters::Thermostat::Attributes::HVACMode::Id);
+      |                  ^~~~~~~~~~~~~~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:16:40: error: 'attribute' has not been declared
+   16 |     attribute_t *hvac_mode_attribute = attribute::get(temp_endpoint_id, Thermostat::Id, chip::app::Clusters::Thermostat::Attributes::HVACMode::Id);
+      |                                        ^~~~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:16:73: error: 'Thermostat' has not been declared
+   16 |     attribute_t *hvac_mode_attribute = attribute::get(temp_endpoint_id, Thermostat::Id, chip::app::Clusters::Thermostat::Attributes::HVACMode::Id);
+      |                                                                         ^~~~~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:16:89: error: 'chip' has not been declared
+   16 |     attribute_t *hvac_mode_attribute = attribute::get(temp_endpoint_id, Thermostat::Id, chip::app::Clusters::Thermostat::Attributes::HVACMode::Id);
+      |                                                                                         ^~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:19:18: error: 'measured_temp_attribute' was not declared in this scope
+   19 |     attribute_t *measured_temp_attribute = attribute::get(temp_endpoint_id, Thermostat::Id, chip::app::Clusters::Thermostat::Attributes::LocalTemperature::Id); // Используем LocalTemperature если MeasuredValue не доступен напрямую в Thermostat
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:19:44: error: 'attribute' has not been declared
+   19 |     attribute_t *measured_temp_attribute = attribute::get(temp_endpoint_id, Thermostat::Id, chip::app::Clusters::Thermostat::Attributes::LocalTemperature::Id); // Используем LocalTemperature если MeasuredValue не доступен напрямую в Thermostat
+      |                                            ^~~~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:19:77: error: 'Thermostat' has not been declared
+   19 |     attribute_t *measured_temp_attribute = attribute::get(temp_endpoint_id, Thermostat::Id, chip::app::Clusters::Thermostat::Attributes::LocalTemperature::Id); // Используем LocalTemperature если MeasuredValue не доступен напрямую в Thermostat
+      |                                                                             ^~~~~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:19:93: error: 'chip' has not been declared
+   19 |     attribute_t *measured_temp_attribute = attribute::get(temp_endpoint_id, Thermostat::Id, chip::app::Clusters::Thermostat::Attributes::LocalTemperature::Id); // Используем LocalTemperature если MeasuredValue не доступен напрямую в Thermostat
+      |                                                                                             ^~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:21:5: error: 'esp_matter_attr_val_t' was not declared in this scope
+   21 |     esp_matter_attr_val_t measured_val = esp_matter_invalid(NULL);
+      |     ^~~~~~~~~~~~~~~~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:22:26: error: expected ';' before 'target_val'
+   22 |     esp_matter_attr_val_t target_val = esp_matter_invalid(NULL);
+      |                          ^~~~~~~~~~~
+      |                          ;
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:23:26: error: expected ';' before 'hvac_mode_val'
+   23 |     esp_matter_attr_val_t hvac_mode_val = esp_matter_invalid(NULL);
+      |                          ^~~~~~~~~~~~~~
+      |                          ;
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:27:9: error: 'esp_err_t' was not declared in this scope
+   27 |         esp_err_t err = app_temp_sensor_read(&current_temp_celsius);
+      |         ^~~~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:28:13: error: 'err' was not declared in this scope
+   28 |         if (err == ESP_OK) {
+      |             ^~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:28:20: error: 'ESP_OK' was not declared in this scope
+   28 |         if (err == ESP_OK) {
+      |                    ^~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:30:13: error: 'int16_t' was not declared in this scope
+   30 |             int16_t measured_value_matter = (int16_t)(current_temp_celsius * 100);
+      |             ^~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:30:13: note: 'int16_t' is defined in header '<cstdint>'; this is probably fixable by adding '#include <cstdint>'
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:32:17: error: 'measured_val' was not declared in this scope
+   32 |                 measured_val.type = ESP_MATTER_VAL_TYPE_INT16;
+      |                 ^~~~~~~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:32:37: error: 'ESP_MATTER_VAL_TYPE_INT16' was not declared in this scope
+   32 |                 measured_val.type = ESP_MATTER_VAL_TYPE_INT16;
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:33:40: error: 'measured_value_matter' was not declared in this scope
+   33 |                 measured_val.val.i16 = measured_value_matter;
+      |                                        ^~~~~~~~~~~~~~~~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:35:17: error: 'attribute' has not been declared
+   35 |                 attribute::update(temp_endpoint_id, Thermostat::Id, chip::app::Clusters::Thermostat::Attributes::LocalTemperature::Id, &measured_val);
+      |                 ^~~~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:35:53: error: 'Thermostat' has not been declared
+   35 |                 attribute::update(temp_endpoint_id, Thermostat::Id, chip::app::Clusters::Thermostat::Attributes::LocalTemperature::Id, &measured_val);
+      |                                                     ^~~~~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:35:69: error: 'chip' has not been declared
+   35 |                 attribute::update(temp_endpoint_id, Thermostat::Id, chip::app::Clusters::Thermostat::Attributes::LocalTemperature::Id, &measured_val);
+      |                                                                     ^~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:39:13: error: 'chip' has not been declared
+   39 |             chip::app::Clusters::Thermostat::SystemModeEnum hvac_mode = chip::app::Clusters::Thermostat::SystemModeEnum::kOff;
+      |             ^~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:40:40: error: 'attribute' has not been declared
+   40 |             if (hvac_mode_attribute && attribute::get_val(hvac_mode_attribute, &hvac_mode_val) == ESP_OK && hvac_mode_val.type == ESP_MATTER_VAL_TYPE_ENUM8) {
+      |                                        ^~~~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:40:81: error: 'hvac_mode_val' was not declared in this scope
+   40 |             if (hvac_mode_attribute && attribute::get_val(hvac_mode_attribute, &hvac_mode_val) == ESP_OK && hvac_mode_val.type == ESP_MATTER_VAL_TYPE_ENUM8) {
+      |                                                                                 ^~~~~~~~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:40:131: error: 'ESP_MATTER_VAL_TYPE_ENUM8' was not declared in this scope
+   40 |             if (hvac_mode_attribute && attribute::get_val(hvac_mode_attribute, &hvac_mode_val) == ESP_OK && hvac_mode_val.type == ESP_MATTER_VAL_TYPE_ENUM8) {
+      |                                                                                                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:41:17: error: 'hvac_mode' was not declared in this scope
+   41 |                 hvac_mode = (chip::app::Clusters::Thermostat::SystemModeEnum)hvac_mode_val.val.u8;
+      |                 ^~~~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:41:30: error: 'chip' has not been declared
+   41 |                 hvac_mode = (chip::app::Clusters::Thermostat::SystemModeEnum)hvac_mode_val.val.u8;
+      |                              ^~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:45:17: error: 'hvac_mode' was not declared in this scope
+   45 |             if (hvac_mode == chip::app::Clusters::Thermostat::SystemModeEnum::kHeat && target_temp_attribute && attribute::get_val(target_temp_attribute, &target_val) == ESP_OK && target_val.type == ESP_MATTER_VAL_TYPE_INT16) {
+      |                 ^~~~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:45:30: error: 'chip' has not been declared
+   45 |             if (hvac_mode == chip::app::Clusters::Thermostat::SystemModeEnum::kHeat && target_temp_attribute && attribute::get_val(target_temp_attribute, &target_val) == ESP_OK && target_val.type == ESP_MATTER_VAL_TYPE_INT16) {
+      |                              ^~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:45:113: error: 'attribute' has not been declared
+   45 |             if (hvac_mode == chip::app::Clusters::Thermostat::SystemModeEnum::kHeat && target_temp_attribute && attribute::get_val(target_temp_attribute, &target_val) == ESP_OK && target_val.type == ESP_MATTER_VAL_TYPE_INT16) {
+      |                                                                                                                 ^~~~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:45:156: error: 'target_val' was not declared in this scope
+   45 |             if (hvac_mode == chip::app::Clusters::Thermostat::SystemModeEnum::kHeat && target_temp_attribute && attribute::get_val(target_temp_attribute, &target_val) == ESP_OK && target_val.type == ESP_MATTER_VAL_TYPE_INT16) {
+      |                                                                                                                                                            ^~~~~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:45:200: error: 'ESP_MATTER_VAL_TYPE_INT16' was not declared in this scope
+   45 |             if (hvac_mode == chip::app::Clusters::Thermostat::SystemModeEnum::kHeat && target_temp_attribute && attribute::get_val(target_temp_attribute, &target_val) == ESP_OK && target_val.type == ESP_MATTER_VAL_TYPE_INT16) {
+      |                                                                                                                                                                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:53:17: error: 'hvac_mode' was not declared in this scope
+   53 |             if (hvac_mode == chip::app::Clusters::Thermostat::SystemModeEnum::kHeat) {
+      |                 ^~~~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:53:30: error: 'chip' has not been declared
+   53 |             if (hvac_mode == chip::app::Clusters::Thermostat::SystemModeEnum::kHeat) {
+      |                              ^~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:54:45: error: 'g_pid' was not declared in this scope
+   54 |                  float power = pid_compute(&g_pid, g_target_temperature, current_temp_celsius);
+      |                                             ^~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:54:32: error: 'pid_compute' was not declared in this scope
+   54 |                  float power = pid_compute(&g_pid, g_target_temperature, current_temp_celsius);
+      |                                ^~~~~~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:55:18: error: 'app_heater_set_power' was not declared in this scope
+   55 |                  app_heater_set_power(power);
+      |                  ^~~~~~~~~~~~~~~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:56:159: error: 'target_val' was not declared in this scope
+   56 |                  ESP_LOGI("temp_ctrl", "T=%.2f°C → power=%.1f%% (target=%.1f Matter=%.2f Mode=%u)", current_temp_celsius, power, g_target_temperature, (float)target_val.val.i16/100.0f, hvac_mode);
+      |                                                                                                                                                               ^~~~~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:56:18: error: 'ESP_LOGI' was not declared in this scope
+   56 |                  ESP_LOGI("temp_ctrl", "T=%.2f°C → power=%.1f%% (target=%.1f Matter=%.2f Mode=%u)", current_temp_celsius, power, g_target_temperature, (float)target_val.val.i16/100.0f, hvac_mode);
+      |                  ^~~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:59:18: error: 'app_heater_set_power' was not declared in this scope
+   59 |                  app_heater_set_power(0.0f);
+      |                  ^~~~~~~~~~~~~~~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:60:29: error: 'g_pid' was not declared in this scope
+   60 |                  pid_reset(&g_pid);
+      |                             ^~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:60:18: error: 'pid_reset' was not declared in this scope
+   60 |                  pid_reset(&g_pid);
+      |                  ^~~~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:61:76: error: 'uint8_t' was not declared in this scope
+   61 |                  ESP_LOGI("temp_ctrl", "T=%.2f°C → Heater OFF (Mode=%u)", (uint8_t)hvac_mode); // Удален current_temp_celsius из лога, так как он не используется в этой ветке
+      |                                                                            ^~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:61:76: note: 'uint8_t' is defined in header '<cstdint>'; this is probably fixable by adding '#include <cstdint>'
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:61:18: error: 'ESP_LOGI' was not declared in this scope
+   61 |                  ESP_LOGI("temp_ctrl", "T=%.2f°C → Heater OFF (Mode=%u)", (uint8_t)hvac_mode); // Удален current_temp_celsius из лога, так как он не используется в этой ветке
+      |                  ^~~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:64:13: error: 'ESP_LOGE' was not declared in this scope
+   64 |             ESP_LOGE("temp_ctrl", "Failed to read temperature");
+      |             ^~~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:66:20: error: 'pdMS_TO_TICKS' was not declared in this scope
+   66 |         vTaskDelay(pdMS_TO_TICKS(TEMP_CONTROL_TASK_PERIOD_MS));
+      |                    ^~~~~~~~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:66:9: error: 'vTaskDelay' was not declared in this scope
+   66 |         vTaskDelay(pdMS_TO_TICKS(TEMP_CONTROL_TASK_PERIOD_MS));
+      |         ^~~~~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp: At global scope:
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:77:9: error: 'node' does not name a type
+   77 |         node::config_t node_config;
+      |         ^~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:79:9: error: 'node_t' does not name a type
+   79 |         node_t *node = node::create(&node_config, app_attribute_update_cb, app_identification_cb);
+      |         ^~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:80:29: error: expected constructor, destructor, or type conversion before '(' token
+   80 |         ABORT_APP_ON_FAILURE(node != nullptr, ESP_LOGE(TAG, "Failed to create Matter node"));
+      |                             ^
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:118:9: error: 'thermostat' does not name a type
+  118 |         thermostat::config_t thermostat_config;
+      |         ^~~~~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:124:9: error: 'thermostat_config' does not name a type
+  124 |         thermostat_config.thermostat.target_heating_setpoint = 4000; // Default 40.00 C in 100ths
+      |         ^~~~~~~~~~~~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:125:9: error: 'thermostat_config' does not name a type
+  125 |         thermostat_config.thermostat.min_heat_setpoint_limit = 1500; // 15.00 C
+      |         ^~~~~~~~~~~~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:126:9: error: 'thermostat_config' does not name a type
+  126 |         thermostat_config.thermostat.max_heat_setpoint_limit = 4500; // 45.00 C
+      |         ^~~~~~~~~~~~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:127:9: error: 'thermostat_config' does not name a type
+  127 |         thermostat_config.thermostat.hvac_mode = (uint8_t)chip::app::Clusters::Thermostat::SystemModeEnum::kHeat; // Start in Heat mode
+      |         ^~~~~~~~~~~~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:135:9: error: 'endpoint_t' does not name a type
+  135 |         endpoint_t *thermostat_endpoint = thermostat::create(node, &thermostat_config, ENDPOINT_FLAG_NONE, nullptr);
+      |         ^~~~~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:136:29: error: expected constructor, destructor, or type conversion before '(' token
+  136 |         ABORT_APP_ON_FAILURE(thermostat_endpoint != nullptr, ESP_LOGE(TAG, "Failed to create thermostat endpoint"));
+      |                             ^
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:138:9: error: 'temp_endpoint_id' does not name a type
+  138 |         temp_endpoint_id = endpoint::get_id(thermostat_endpoint);
+      |         ^~~~~~~~~~~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:139:17: error: expected constructor, destructor, or type conversion before '(' token
+  139 |         ESP_LOGI(TAG, "Thermostat created with endpoint_id %d", temp_endpoint_id);
+      |                 ^
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:142:9: error: 'attribute_t' does not name a type
+  142 |         attribute_t *target_heat_attribute = attribute::get(temp_endpoint_id, Thermostat::Id, chip::app::Clusters::Thermostat::Attributes::TargetHeatingSetpoint::Id);
+      |         ^~~~~~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:143:9: error: 'attribute' does not name a type
+  143 |         attribute::set_deferred_persistence(target_heat_attribute);
+      |         ^~~~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:145:9: error: 'attribute_t' does not name a type
+  145 |         attribute_t *hvac_mode_attribute = attribute::get(temp_endpoint_id, Thermostat::Id, chip::app::Clusters::Thermostat::Attributes::HVACMode::Id);
+      |         ^~~~~~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:146:9: error: 'attribute' does not name a type
+  146 |         attribute::set_deferred_persistence(hvac_mode_attribute);
+      |         ^~~~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:148:9: error: 'err' does not name a type
+  148 |         err = esp_matter::start(app_event_cb);
+      |         ^~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:149:29: error: expected constructor, destructor, or type conversion before '(' token
+  149 |         ABORT_APP_ON_FAILURE(err == ESP_OK, ESP_LOGE(TAG, "Failed to start Matter, err:%d", err));
+      |                             ^
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:12:13: warning: 'void temp_control_task(void*)' defined but not used [-Wunused-function]
+   12 | static void temp_control_task(void *arg)
+      |             ^~~~~~~~~~~~~~~~~
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_main.cpp:8:20: warning: 'TAG' defined but not used [-Wunused-variable]
+    8 | static const char *TAG = "app_main";
+      |                    ^~~
+[5/20] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/app_driver_temp_sensor.cpp.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/app_driver_temp_sensor.cpp.obj 
+/home/knipin/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20241119/riscv32-esp-elf/bin/riscv32-esp-elf-g++ -DESP_MDNS_VERSION_NUMBER=\"1.8.2\" -DESP_PLATFORM -DIDF_VER=\"v5.4.1\" -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/home/knipin/esp/esp-matter/examples/smart_floor_v3/build/config -I/home/knipin/esp/esp-matter/examples/smart_floor_v3/main -I/home/knipin/esp/esp-matter/components/esp_matter -I/home/knipin/esp/esp-matter/device_hal/device/include -I/home/knipin/esp/esp-matter/examples/common/utils -I/home/knipin/esp/esp-matter/connectedhomeip/connectedhomeip/src -I/home/knipin/esp/esp-matter/connectedhomeip/connectedhomeip/zzz_generated/app-common/app-common/zap-generated -I/home/knipin/esp/esp-idf/components/newlib/platform_include -I/home/knipin/esp/esp-idf/components/freertos/config/include -I/home/knipin/esp/esp-idf/components/freertos/config/include/freertos -I/home/knipin/esp/esp-idf/components/freertos/config/riscv/include -I/home/knipin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/knipin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include -I/home/knipin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos -I/home/knipin/esp/esp-idf/components/freertos/esp_additions/include -I/home/knipin/esp/esp-idf/components/esp_hw_support/include -I/home/knipin/esp/esp-idf/components/esp_hw_support/include/soc -I/home/knipin/esp/esp-idf/components/esp_hw_support/include/soc/esp32c6 -I/home/knipin/esp/esp-idf/components/esp_hw_support/dma/include -I/home/knipin/esp/esp-idf/components/esp_hw_support/ldo/include -I/home/knipin/esp/esp-idf/components/esp_hw_support/debug_probe/include -I/home/knipin/esp/esp-idf/components/esp_hw_support/port/esp32c6/. -I/home/knipin/esp/esp-idf/components/esp_hw_support/port/esp32c6/include -I/home/knipin/esp/esp-idf/components/esp_hw_support/port/esp32c6/private_include -I/home/knipin/esp/esp-idf/components/heap/include -I/home/knipin/esp/esp-idf/components/heap/tlsf -I/home/knipin/esp/esp-idf/components/log/include -I/home/knipin/esp/esp-idf/components/soc/include -I/home/knipin/esp/esp-idf/components/soc/esp32c6 -I/home/knipin/esp/esp-idf/components/soc/esp32c6/include -I/home/knipin/esp/esp-idf/components/soc/esp32c6/register -I/home/knipin/esp/esp-idf/components/hal/platform_port/include -I/home/knipin/esp/esp-idf/components/hal/esp32c6/include -I/home/knipin/esp/esp-idf/components/hal/include -I/home/knipin/esp/esp-idf/components/esp_rom/include -I/home/knipin/esp/esp-idf/components/esp_rom/esp32c6/include -I/home/knipin/esp/esp-idf/components/esp_rom/esp32c6/include/esp32c6 -I/home/knipin/esp/esp-idf/components/esp_rom/esp32c6 -I/home/knipin/esp/esp-idf/components/esp_common/include -I/home/knipin/esp/esp-idf/components/esp_system/include -I/home/knipin/esp/esp-idf/components/esp_system/port/soc -I/home/knipin/esp/esp-idf/components/esp_system/port/include/riscv -I/home/knipin/esp/esp-idf/components/esp_system/port/include/private -I/home/knipin/esp/esp-idf/components/riscv/include -I/home/knipin/esp/esp-idf/components/lwip/include -I/home/knipin/esp/esp-idf/components/lwip/include/apps -I/home/knipin/esp/esp-idf/components/lwip/include/apps/sntp -I/home/knipin/esp/esp-idf/components/lwip/lwip/src/include -I/home/knipin/esp/esp-idf/components/lwip/port/include -I/home/knipin/esp/esp-idf/components/lwip/port/freertos/include -I/home/knipin/esp/esp-idf/components/lwip/port/esp32xx/include -I/home/knipin/esp/esp-idf/components/lwip/port/esp32xx/include/arch -I/home/knipin/esp/esp-idf/components/lwip/port/esp32xx/include/sys -I/home/knipin/esp/esp-idf/components/nvs_flash/include -I/home/knipin/esp/esp-idf/components/esp_partition/include -I/home/knipin/esp/esp-idf/components/driver/deprecated -I/home/knipin/esp/esp-idf/components/driver/i2c/include -I/home/knipin/esp/esp-idf/components/driver/touch_sensor/include -I/home/knipin/esp/esp-idf/components/driver/twai/include -I/home/knipin/esp/esp-idf/components/esp_pm/include -I/home/knipin/esp/esp-idf/components/esp_ringbuf/include -I/home/knipin/esp/esp-idf/components/esp_driver_gpio/include -I/home/knipin/esp/esp-idf/components/esp_driver_pcnt/include -I/home/knipin/esp/esp-idf/components/esp_driver_gptimer/include -I/home/knipin/esp/esp-idf/components/esp_driver_spi/include -I/home/knipin/esp/esp-idf/components/esp_driver_mcpwm/include -I/home/knipin/esp/esp-idf/components/esp_driver_ana_cmpr/include -I/home/knipin/esp/esp-idf/components/esp_driver_i2s/include -I/home/knipin/esp/esp-idf/components/esp_driver_sdmmc/include -I/home/knipin/esp/esp-idf/components/sdmmc/include -I/home/knipin/esp/esp-idf/components/esp_driver_sdspi/include -I/home/knipin/esp/esp-idf/components/esp_driver_sdio/include -I/home/knipin/esp/esp-idf/components/esp_driver_dac/include -I/home/knipin/esp/esp-idf/components/esp_driver_rmt/include -I/home/knipin/esp/esp-idf/components/esp_driver_tsens/include -I/home/knipin/esp/esp-idf/components/esp_driver_sdm/include -I/home/knipin/esp/esp-idf/components/esp_driver_i2c/include -I/home/knipin/esp/esp-idf/components/esp_driver_uart/include -I/home/knipin/esp/esp-idf/components/vfs/include -I/home/knipin/esp/esp-idf/components/esp_driver_ledc/include -I/home/knipin/esp/esp-idf/components/esp_driver_parlio/include -I/home/knipin/esp/esp-idf/components/esp_driver_usb_serial_jtag/include -I/home/knipin/esp/esp-matter/components/esp_matter/utils -I/home/knipin/esp/esp-matter/connectedhomeip/connectedhomeip/zzz_generated/app-common -I/home/knipin/esp/esp-matter/connectedhomeip/connectedhomeip/third_party/nlfaultinjection/include -I/home/knipin/esp/esp-matter/components/esp_matter/zap_common -I/home/knipin/esp/esp-matter/connectedhomeip/connectedhomeip/src/platform/ESP32 -I/home/knipin/esp/esp-matter/connectedhomeip/connectedhomeip/src/platform/OpenThread -I/home/knipin/esp/esp-matter/connectedhomeip/connectedhomeip/src/include -I/home/knipin/esp/esp-matter/connectedhomeip/connectedhomeip/src/lib -I/home/knipin/esp/esp-matter/connectedhomeip/connectedhomeip/examples/platform/esp32 -I/home/knipin/esp/esp-matter/connectedhomeip/connectedhomeip/third_party/nlassert/repo/include -I/home/knipin/esp/esp-matter/connectedhomeip/connectedhomeip/third_party/nlio/repo/include -I/home/knipin/esp/esp-matter/examples/smart_floor_v3/build/esp-idf/chip/src/include -I/home/knipin/esp/esp-matter/examples/smart_floor_v3/build/esp-idf/chip/include -I/home/knipin/esp/esp-matter/examples/smart_floor_v3/build/esp-idf/chip/gen/include -I/home/knipin/esp/esp-matter/connectedhomeip/connectedhomeip/config/esp32 -I/home/knipin/esp/esp-matter/connectedhomeip/connectedhomeip/config/esp32/../.. -I/home/knipin/esp/esp-matter/examples/smart_floor_v3/managed_components/espressif__esp_delta_ota/include -I/home/knipin/esp/esp-matter/examples/smart_floor_v3/managed_components/espressif__esp_encrypted_img/include -I/home/knipin/esp/esp-matter/examples/smart_floor_v3/managed_components/espressif__esp_insights/include -I/home/knipin/esp/esp-matter/examples/smart_floor_v3/managed_components/espressif__esp_diagnostics/include -I/home/knipin/esp/esp-idf/components/console -I/home/knipin/esp/esp-idf/components/esp_vfs_console/include -I/home/knipin/esp/esp-idf/components/bt/include/esp32c6/include -I/home/knipin/esp/esp-idf/components/bt/common/osi/include -I/home/knipin/esp/esp-idf/components/bt/common/api/include/api -I/home/knipin/esp/esp-idf/components/bt/common/btc/profile/esp/blufi/include -I/home/knipin/esp/esp-idf/components/bt/common/btc/profile/esp/include -I/home/knipin/esp/esp-idf/components/bt/common/hci_log/include -I/home/knipin/esp/esp-idf/components/bt/common/ble_log/include -I/home/knipin/esp/esp-idf/components/bt/porting/include -I/home/knipin/esp/esp-idf/components/bt/porting/npl/freertos/include -I/home/knipin/esp/esp-idf/components/bt/porting/transport/include -I/home/knipin/esp/esp-idf/components/bt/host/nimble/nimble/nimble/host/include -I/home/knipin/esp/esp-idf/components/bt/host/nimble/nimble/nimble/include -I/home/knipin/esp/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/ans/include -I/home/knipin/esp/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/bas/include -I/home/knipin/esp/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/dis/include -I/home/knipin/esp/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/gap/include -I/home/knipin/esp/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/gatt/include -I/home/knipin/esp/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/hr/include -I/home/knipin/esp/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/htp/include -I/home/knipin/esp/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/ias/include -I/home/knipin/esp/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/ipss/include -I/home/knipin/esp/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/lls/include -I/home/knipin/esp/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/prox/include -I/home/knipin/esp/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/cts/include -I/home/knipin/esp/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/tps/include -I/home/knipin/esp/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/hid/include -I/home/knipin/esp/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/sps/include -I/home/knipin/esp/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/cte/include -I/home/knipin/esp/esp-idf/components/bt/host/nimble/nimble/nimble/host/util/include -I/home/knipin/esp/esp-idf/components/bt/host/nimble/nimble/nimble/host/store/ram/include -I/home/knipin/esp/esp-idf/components/bt/host/nimble/nimble/nimble/host/store/config/include -I/home/knipin/esp/esp-idf/components/bt/host/nimble/nimble/porting/nimble/include -I/home/knipin/esp/esp-idf/components/bt/host/nimble/port/include -I/home/knipin/esp/esp-idf/components/bt/host/nimble/nimble/nimble/transport/include -I/home/knipin/esp/esp-idf/components/esp_timer/include -I/home/knipin/esp/esp-idf/components/esp_wifi/include -I/home/knipin/esp/esp-idf/components/esp_wifi/include/local -I/home/knipin/esp/esp-idf/components/esp_wifi/wifi_apps/include -I/home/knipin/esp/esp-idf/components/esp_wifi/wifi_apps/nan_app/include -I/home/knipin/esp/esp-idf/components/esp_event/include -I/home/knipin/esp/esp-idf/components/esp_phy/include -I/home/knipin/esp/esp-idf/components/esp_phy/esp32c6/include -I/home/knipin/esp/esp-idf/components/esp_netif/include -I/home/knipin/esp/esp-matter/examples/smart_floor_v3/managed_components/espressif__mdns/include -I/home/knipin/esp/esp-matter/components/esp_matter_console -I/home/knipin/esp/esp-idf/components/app_update/include -I/home/knipin/esp/esp-idf/components/bootloader_support/include -I/home/knipin/esp/esp-idf/components/bootloader_support/bootloader_flash/include -I/home/knipin/esp/esp-idf/components/esp_app_format/include -I/home/knipin/esp/esp-idf/components/esp_bootloader_format/include -I/home/knipin/esp/esp-matter/examples/smart_floor_v3/managed_components/espressif__esp_secure_cert_mgr/include -I/home/knipin/esp/esp-idf/components/spi_flash/include -I/home/knipin/esp/esp-idf/components/mbedtls/port/include -I/home/knipin/esp/esp-idf/components/mbedtls/mbedtls/include -I/home/knipin/esp/esp-idf/components/mbedtls/mbedtls/library -I/home/knipin/esp/esp-idf/components/mbedtls/esp_crt_bundle/include -I/home/knipin/esp/esp-idf/components/mbedtls/mbedtls/3rdparty/everest/include -I/home/knipin/esp/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m -I/home/knipin/esp/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m/p256-m -I/home/knipin/esp/esp-idf/components/efuse/include -I/home/knipin/esp/esp-idf/components/efuse/esp32c6/include -I/home/knipin/esp/esp-idf/components/json/cJSON -march=rv32imac_zicsr_zifencei  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -nostartfiles -Og -fno-shrink-wrap -fmacro-prefix-map=/home/knipin/esp/esp-matter/examples/smart_floor_v3=. -fmacro-prefix-map=/home/knipin/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -Wno-error=uninitialized -Wno-error=maybe-uninitialized -Wno-missing-field-initializers -Wno-error=array-bounds -Wno-write-strings -Wno-format-nonliteral -Wno-format-security -std=gnu++2b -fno-exceptions -fno-rtti -fuse-cxa-atexit -std=gnu++17 -Os -DCHIP_HAVE_CONFIG_H -Wno-overloaded-virtual "-DCHIP_ADDRESS_RESOLVE_IMPL_INCLUDE_HEADER=<lib/address_resolve/AddressResolve_DefaultImpl.h>" -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/app_driver_temp_sensor.cpp.obj -MF esp-idf/main/CMakeFiles/__idf_main.dir/app_driver_temp_sensor.cpp.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/app_driver_temp_sensor.cpp.obj -c /home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_driver_temp_sensor.cpp
+In file included from /home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_driver_temp_sensor.cpp:1:
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/main/app_driver_temp_sensor.h:4:10: fatal error: esp_adc/adc_oneshot.h: No such file or directory
+    4 | #include "esp_adc/adc_oneshot.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+[6/20] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/pid_controller.cpp.obj
+[7/20] Linking C static library esp-idf/esp_matter/libesp_matter.a
+[8/20] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/app_driver.cpp.obj
+[9/20] Building CXX object esp-idf/app_reset/CMakeFiles/__idf_app_reset.dir/app_reset.cpp.obj
+[10/20] Building CXX object esp-idf/esp_matter_bridge/CMakeFiles/__idf_esp_matter_bridge.dir/esp_matter_bridge.cpp.obj
+ninja: build stopped: subcommand failed.

@@ -1,0 +1,47 @@
+[0/1] Re-running CMake...
+-- Component directory /home/knipin/esp/esp-matter/examples/common/blemesh_platform does not contain a CMakeLists.txt file. No component will be added
+-- Component directory /home/knipin/esp/esp-matter/examples/common/cmake_common does not contain a CMakeLists.txt file. No component will be added
+-- Component directory /home/knipin/esp/esp-matter/examples/common/external_platform does not contain a CMakeLists.txt file. No component will be added
+-- Component directory /home/knipin/esp/esp-matter/examples/common/relinker does not contain a CMakeLists.txt file. No component will be added
+-- Component directory /home/knipin/esp/esp-matter/examples/common/utils does not contain a CMakeLists.txt file. No component will be added
+-- Building ESP-IDF components for target esp32c6
+NOTICE: Skipping optional dependency: espressif/cmake_utilities
+NOTICE: Skipping optional dependency: espressif/esp_wifi_remote
+NOTICE: Skipping optional dependency: espressif/cmake_utilities
+NOTICE: Skipping optional dependency: espressif/esp_wifi_remote
+NOTICE: Skipping optional dependency: espressif/cmake_utilities
+NOTICE: Skipping optional dependency: espressif/esp_wifi_remote
+NOTICE: Skipping optional dependency: espressif/cmake_utilities
+NOTICE: Skipping optional dependency: espressif/esp_wifi_remote
+NOTICE: 
+Following dependencies have new versions available:
+Dependency "espressif/esp_delta_ota": "1.1.1" -> "1.1.2"
+Dependency "espressif/esp_diagnostics": "1.2.1" -> "1.2.3"
+Dependency "espressif/esp_insights": "1.2.4" -> "1.2.6"
+Consider running "idf.py update-dependencies" to update your lock file.
+NOTICE: Processing 18 dependencies:
+NOTICE: [1/18] espressif/button (4.1.3)
+NOTICE: [2/18] espressif/cbor (0.6.0~2)
+NOTICE: [3/18] espressif/cmake_utilities (1.1.1)
+NOTICE: [4/18] espressif/esp-serial-flasher (0.0.11)
+NOTICE: [5/18] espressif/esp_delta_ota (1.1.1)
+NOTICE: [6/18] espressif/esp_diag_data_store (1.0.2)
+NOTICE: [7/18] espressif/esp_diagnostics (1.2.1)
+NOTICE: [8/18] espressif/esp_encrypted_img (2.3.0)
+NOTICE: [9/18] espressif/esp_insights (1.2.4)
+NOTICE: [10/18] espressif/esp_rcp_update (1.3.1)
+NOTICE: [11/18] espressif/esp_secure_cert_mgr (2.5.0)
+NOTICE: [12/18] espressif/jsmn (1.1.0)
+NOTICE: [13/18] espressif/json_generator (1.1.2)
+NOTICE: [14/18] espressif/json_parser (1.0.3)
+NOTICE: [15/18] espressif/led_strip (1.0.0)
+NOTICE: [16/18] espressif/mdns (1.8.2)
+NOTICE: [17/18] espressif/rmaker_common (1.4.6)
+NOTICE: [18/18] idf (5.4.1)
+-- Found Python3: /home/knipin/.espressif/python_env/idf5.4_py3.10_env/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+NOTICE: Skipping optional dependency: espressif/esp_wifi_remote
+NOTICE: Skipping optional dependency: espressif/cmake_utilities
+-- Configuring incomplete, errors occurred!
+See also "/home/knipin/esp/esp-matter/examples/smart_floor_v3/build/CMakeFiles/CMakeOutput.log".
+FAILED: build.ninja 
+/usr/bin/cmake --regenerate-during-build -S/home/knipin/esp/esp-matter/examples/smart_floor_v3 -B/home/knipin/esp/esp-matter/examples/smart_floor_v3/build

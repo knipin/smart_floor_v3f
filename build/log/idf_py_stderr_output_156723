@@ -1,0 +1,13 @@
+IDF_VERSION: 5.4.1; idf version number: 5.4.1
+Sequence of SDKCONFIG files: sdkconfig.defaults
+CMake Error at /home/knipin/esp/esp-idf/tools/cmake/build.cmake:318 (message):
+  Failed to resolve component 'adc_oneshot' required by component 'main':
+  unknown name.
+Call Stack (most recent call first):
+  /home/knipin/esp/esp-idf/tools/cmake/build.cmake:361 (__build_resolve_and_add_req)
+  /home/knipin/esp/esp-idf/tools/cmake/build.cmake:665 (__build_expand_requirements)
+  /home/knipin/esp/esp-idf/tools/cmake/project.cmake:717 (idf_build_process)
+  CMakeLists.txt:47 (project)
+
+
+ninja: error: rebuilding 'build.ninja': subcommand failed

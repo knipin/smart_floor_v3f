@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/build/CMakeFiles/bootloader
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/build/CMakeFiles/bootloader.rule
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/build/CMakeFiles/bootloader-complete.rule
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/knipin/esp/esp-matter/examples/smart_floor_v3/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
